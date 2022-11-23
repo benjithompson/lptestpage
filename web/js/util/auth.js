@@ -69,7 +69,7 @@ lpGetAuthenticationToken = function (cb) {
 
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
-        headers.append("Access-Control-Allow-Origin", "https://auth.support-lp.com/liveperson/implicit/jwt'");
+        headers.append("Access-Control-Allow-Origin", "*");
 
         let payload = {
             iss: window._auth.identity.iss,
