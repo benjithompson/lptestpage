@@ -90,7 +90,7 @@ lpGetAuthenticationToken = function (cb) {
             headers, body
         };
 
-        fetch(`https://auth.support-lp.com/liveperson/implicit/jwt`, requestOptions)
+        fetch(`https://auth.support-lp.com/api/auth/token`, requestOptions)
           .then(response => response.text().then(text => cb(text)))
           .catch(error => console.log('error', error));
     } else {
