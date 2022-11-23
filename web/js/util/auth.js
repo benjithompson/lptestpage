@@ -69,6 +69,7 @@ lpGetAuthenticationToken = function (cb) {
 
         let headers = new Headers();
         headers.append("Content-Type", "application/json");
+        headers.append("Access-Control-Allow-Origin", "benjithompson.github.io");
 
         let payload = {
             iss: window._auth.identity.iss,
