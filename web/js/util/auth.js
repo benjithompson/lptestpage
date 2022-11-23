@@ -25,7 +25,7 @@ if (params.has('sub')) {
     location.reload()
 }
 
-let authDomain = 'supportlab.lpnet.com'
+let authDomain = 'auth.support-lp.com'
 if (params.has('auth-ngrok')) {
     authDomain = `${params.get('auth-ngrok')}.ngrok.io`
 }
@@ -89,7 +89,7 @@ lpRetailChatAuth = function (cb) {
             headers, body
         };
 
-        fetch(`https://${authDomain}/api/auth/token`, requestOptions)
+        fetch(`https://${authDomain}/liveperson/implicit/jwt`, requestOptions)
           .then(response => response.text().then(text => cb(text)))
           .catch(error => console.log('error', error));
     } else {
@@ -121,7 +121,7 @@ lpGetAuthenticationCode = function (cb) {
             headers, body
         };
 
-        fetch(`https://${authDomain}/api/auth/code`, requestOptions)
+        fetch(`https://${authDomain}/liveperson/code/token`, requestOptions)
           .then(response => response.text().then(text => cb(text)))
           .catch(error => console.log('error', error));
     } else {
