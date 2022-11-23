@@ -62,7 +62,7 @@ function stepUp (sub) {
     location.reload()
 }
 
-lpRetailChatAuth = function (cb) {
+lpGetAuthenticationToken = function (cb) {
     if (window._auth.identity && window._auth.identity.sub) {
         if (document.getElementById('authYourJWT').value) return cb(document.getElementById('authYourJWT').value)
         if (document.getElementById('authHardCode').checked) return cb(document.getElementById('authHardCodedJWT').value)
@@ -89,7 +89,7 @@ lpRetailChatAuth = function (cb) {
             headers, body
         };
 
-        fetch(`https://${authDomain}/liveperson/implicit/jwt`, requestOptions)
+        fetch(`https://auth.support-lp.com/liveperson/implicit/jwt`, requestOptions)
           .then(response => response.text().then(text => cb(text)))
           .catch(error => console.log('error', error));
     } else {
@@ -121,7 +121,7 @@ lpGetAuthenticationCode = function (cb) {
             headers, body
         };
 
-        fetch(`https://${authDomain}/liveperson/code/token`, requestOptions)
+        fetch(`https://auth.support-lp.com/liveperson/code/token`, requestOptions)
           .then(response => response.text().then(text => cb(text)))
           .catch(error => console.log('error', error));
     } else {
