@@ -68,6 +68,11 @@ function addSDE(array = [], type) {
             if (document.getElementById('searchInfoKeywords').value) {
                 payload.keywords = document.getElementById('searchInfoKeywords').value.split(',')
             }
+        case 'ctmrInfo':
+            payload.keywords = [];
+            if (document.getElementById('ctmrInfoUserName').value) {
+                payload.keywords = document.getElementById('ctmrInfoUserName').value.split(',')
+            }
     }
 
     array.push(payload);
