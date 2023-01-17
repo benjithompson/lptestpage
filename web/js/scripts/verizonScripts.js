@@ -1,4 +1,4 @@
-window.onload = function () {
+/*window.onload = function () {
     console.log("Bind lpTag events RENDERER_STUB and AFTER_CREATE_ENGAGEMENT_INSTANCE");
 
     window.lpTag.events.bind(
@@ -631,3 +631,4 @@ function hideLPChatButton() {
         console.log(e);
     }
 }
+*/
