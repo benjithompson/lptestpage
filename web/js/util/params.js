@@ -18,9 +18,9 @@ if (params.get('sections')) lpTag.section = params.get('sections').split(',')
 if (params.get('autostart') === 'false') lpTag.autoStart = false;
 
 // tag version
-lpTag.external._tagV = '1.10'
+lpTag.external._tagV = '10.23.0.0'
 if (params.get('tag')) {
-    let versions = ['1.0','1.1','1.2','1.3','1.4','1.5','1.6','1.7','1.8','1.9','1.10']
+    let versions = ['1.0','1.1','1.2','1.3','1.4','1.5','1.6','1.7','1.8','1.9','1.10','10.23.0.0']
     let _tag = params.get('tag')
     if (versions.indexOf(_tag) > -1) lpTag.external._tagV = _tag
 }
