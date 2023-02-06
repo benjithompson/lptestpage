@@ -15,8 +15,8 @@ fetch('https://va.v.liveperson.net/api/account/75554483/monitoring/visitors/FiN2
     method: 'GET',
     headers: {
         'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*',
         'Authorization': 'Bearer 809a9474e44afc326d3ab1bf52b9ee84e93581dbf2ff01e72e261e24b57565c1'
-        
     },
 })
 .then(response => response.json())
