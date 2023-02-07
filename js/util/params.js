@@ -50,5 +50,4 @@ if (params.has('divids')) {
     })
 }
 
-// Test visit api cors issue for verizon
-waitForTag(fetch());
+fetch();
