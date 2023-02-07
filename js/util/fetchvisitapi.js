@@ -3,7 +3,7 @@
 function fetchVisitAPI(){
     let sid = lpTag.taglets.lp_monitoringSDK.getSid();
     let vid = lpTag.taglets.lp_monitoringSDK.getVid();
-    fetch('https://va.v.liveperson.net/api/account/75554483/monitoring/visitors/${vid}/visits/current/state?v=1&filter=agent=${sid}', {
+    fetch('https://va.v.liveperson.net/api/account/75554483/monitoring/visitors/${vid}/visits/current/state?v=1&filter=agent&sid=${sid}', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
