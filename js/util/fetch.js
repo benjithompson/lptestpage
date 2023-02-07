@@ -1,3 +1,4 @@
+waitForTag(fetch);
 
 function fetch(){
     fetch('https://va.v.liveperson.net/api/account/75554483/monitoring/visitors/A3MWU2ZTU2NmMwNzRiN2Vl/visits/current/state?v=1&filter=agent&sid=AsfghSCZT6-Sno2AJw7ZAA', {
