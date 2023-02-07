@@ -49,5 +49,3 @@ if (params.has('divids')) {
         });
     })
 }
-
-fetch();
