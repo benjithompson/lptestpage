@@ -10,11 +10,11 @@
   <script src="js/util/params.js"></script>
   <script src="js/util/fetchvisitapi.js"></script>
   <script src="js/util/closeConversation.js"></script>
-<!--  <script src="js/lptag/1.10.0.js"></script>-->
+  <script src="js/lptag/1.10.0.js"></script>
   <script src="js/util/includescripts.js"></script>
 </head>
 
-<body>
+<body onbeforeunload="return closeConversation()">
 
 <!--    Query Param Config  -->
   <div>
@@ -170,6 +170,6 @@
     <button onclick="sendSDEs(undefined, 'searchInfo')">send()</button>
   </div>
 <br />
-<iframe src="iframe.html?account=75554483" height="1200" width="1600" title="Iframe Example"></iframe>
+<iframe src="iframe.html?account=75554483" height="600" width="800" title="Iframe Example"></iframe>
 </body>
 </html>
