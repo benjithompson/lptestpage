@@ -9,12 +9,12 @@
   <script src="js/util/waitfortag.js"></script>
   <script src="js/util/params.js"></script>
   <script src="js/util/fetchvisitapi.js"></script>
-  <script src="js/util/closeConversation.js"></script>
   <script src="js/lptag/1.10.0.js"></script>
   <script src="js/util/includescripts.js"></script>
+  <script src="js/util/popoutchat.js"></script>
 </head>
 
-<body onbeforeunload="return closeConversation()">
+<body>
 
 <!--    Query Param Config  -->
   <div>
@@ -50,6 +50,12 @@
 <!--  <label for="reloadPageSections">Sections:</label>-->
 <!--  <input id="reloadPageSections">-->
   <button onclick="location.reload()">location.reload()</button>
+</div>
+
+<!-- Popout Chat -->
+<div>
+  <h3>Popout Chat</h3>
+  <button id="popoutChatButton" onclick="openPopoutChat('http://localhost:5500/html/popoutchat.html?account=75554483')">Open Chat</button>
 </div>
 <!--    Authentication  -->
   <div>

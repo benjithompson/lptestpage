@@ -1,8 +1,7 @@
-const closeConversation = async () => {
+const closeConv = async () => {
     document.querySelector('.lp_close').click();
-    await sleep(500);
+    await sleep(1000);
     document.querySelector('.lp_confirm_button').click();
-    console.log("close convo");
 }
 
 const sleep = async (milliseconds) => {
