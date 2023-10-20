@@ -1,0 +1,10 @@
+.box {
+    width: 60%;
+    height: 50px;
+    border: 5px solid gold;
+  }
+  img {
+    width: 50%;
+    height: 100%;
+    /* object-fit: cover; */
+  }
